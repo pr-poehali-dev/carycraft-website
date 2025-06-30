@@ -10,7 +10,7 @@ const Donate = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 mb-16">
-        <div className="bg-gray-900 border-2 border-gray-700 p-8">
+        <div className="bg-black/70 backdrop-blur-sm border-2 border-gray-700 p-8">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-green-600 border-2 border-green-400 flex items-center justify-center">
               <span className="text-white text-lg">🗝️</span>
@@ -47,7 +47,7 @@ const Donate = () => {
           </button>
         </div>
 
-        <div className="bg-gray-900 border-2 border-gray-700 p-8">
+        <div className="bg-black/70 backdrop-blur-sm border-2 border-gray-700 p-8">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-12 h-12 bg-red-600 border-2 border-red-400 flex items-center justify-center">
               <span className="text-white text-lg">❤️</span>
@@ -98,7 +98,7 @@ const Donate = () => {
         </div>
       </div>
 
-      <div className="bg-gray-800 border-2 border-gray-600 p-8 text-center">
+      <div className="bg-black/70 backdrop-blur-sm border-2 border-gray-600 p-8 text-center">
         <div className="flex items-center justify-center gap-4 mb-6">
           <div className="w-8 h-8 bg-yellow-600 border-2 border-yellow-400"></div>
           <h3 className="text-2xl font-bold text-white tracking-wider">

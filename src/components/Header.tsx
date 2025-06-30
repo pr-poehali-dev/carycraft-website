@@ -5,7 +5,7 @@ interface HeaderProps {
 
 const Header = ({ activeTab, setActiveTab }: HeaderProps) => {
   return (
-    <header className="bg-gray-900 border-b-2 border-gray-700">
+    <header className="bg-black/80 backdrop-blur-sm border-b-2 border-gray-700">
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
