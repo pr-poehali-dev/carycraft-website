@@ -1,81 +1,66 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
-
 const Hero = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-6xl font-bold text-white mb-4 font-montserrat">
-          Добро пожаловать на
-          <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-            {" "}
-            CaryCraft
-          </span>
+    <div className="max-w-4xl mx-auto px-4 py-16">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl font-bold text-white mb-6 tracking-wider">
+          CARYCRAFT SERVER
         </h1>
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-          Уникальный полу-РП сервер Minecraft с системой потери сердец
+        <div className="w-32 h-1 bg-white mx-auto mb-6"></div>
+        <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+          Полу-РП сервер с системой потери сердец после смерти
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 mb-12">
-        <Card className="bg-black/40 border-purple-500/30 backdrop-blur-sm">
-          <CardContent className="p-8">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center">
-                <Icon name="Heart" size={24} className="text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-white">Система сердец</h3>
+      <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="bg-gray-900 border-2 border-gray-700 p-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 bg-red-600 border-2 border-red-400 flex items-center justify-center">
+              <span className="text-white text-lg">❤️</span>
             </div>
-            <p className="text-gray-300 mb-4">
-              На нашем сервере действует уникальная система потери сердец после
-              смерти. Каждая смерть делает игру более напряженной и
-              реалистичной.
-            </p>
-            <Badge
-              variant="destructive"
-              className="bg-red-600/20 text-red-400 border-red-500/30"
-            >
-              Хардкор режим
-            </Badge>
-          </CardContent>
-        </Card>
+            <h3 className="text-xl font-bold text-white tracking-wide">
+              СИСТЕМА СЕРДЕЦ
+            </h3>
+          </div>
+          <p className="text-gray-300 mb-6 leading-relaxed">
+            На сервере действует система потери сердец после смерти. Каждая
+            смерть уменьшает максимальное здоровье игрока.
+          </p>
+          <div className="inline-block px-4 py-2 bg-red-900 border border-red-700 text-red-300">
+            HARDCORE MODE
+          </div>
+        </div>
 
-        <Card className="bg-black/40 border-purple-500/30 backdrop-blur-sm">
-          <CardContent className="p-8">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
-                <Icon name="Users" size={24} className="text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-white">Полу-РП сервер</h3>
+        <div className="bg-gray-900 border-2 border-gray-700 p-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 bg-blue-600 border-2 border-blue-400 flex items-center justify-center">
+              <span className="text-white text-lg">👥</span>
             </div>
-            <p className="text-gray-300 mb-4">
-              Погрузитесь в мир ролевой игры, где каждое действие имеет
-              значение. Создавайте истории, взаимодействуйте с другими игроками
-              и стройте свою легенду.
-            </p>
-            <Badge
-              variant="secondary"
-              className="bg-green-600/20 text-green-400 border-green-500/30"
-            >
-              Ролевая игра
-            </Badge>
-          </CardContent>
-        </Card>
+            <h3 className="text-xl font-bold text-white tracking-wide">
+              ПОЛУ-РП
+            </h3>
+          </div>
+          <p className="text-gray-300 mb-6 leading-relaxed">
+            Ролевая игра в специальных зонах сервера. Создавайте истории и
+            взаимодействуйте с другими игроками.
+          </p>
+          <div className="inline-block px-4 py-2 bg-blue-900 border border-blue-700 text-blue-300">
+            ROLEPLAY
+          </div>
+        </div>
       </div>
 
-      <Card className="bg-gradient-to-r from-purple-900/50 to-blue-900/50 border-purple-500/30 backdrop-blur-sm">
-        <CardContent className="p-8 text-center">
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <Icon name="Server" size={32} className="text-purple-400" />
-            <h3 className="text-3xl font-bold text-white">IP: carycraft.ru</h3>
-          </div>
-          <p className="text-gray-300 text-lg">
-            Присоединяйтесь к нашему сообществу и начните свое приключение уже
-            сегодня!
-          </p>
-        </CardContent>
-      </Card>
+      <div className="bg-gray-800 border-2 border-gray-600 p-8 text-center">
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="w-8 h-8 bg-green-600 border-2 border-green-400"></div>
+          <h3 className="text-2xl font-bold text-white tracking-wider">
+            SERVER IP
+          </h3>
+        </div>
+        <div className="text-3xl font-bold text-green-400 tracking-widest mb-4">
+          carycraft.ru
+        </div>
+        <p className="text-gray-400">Подключайтесь и начинайте игру</p>
+      </div>
     </div>
   );
 };

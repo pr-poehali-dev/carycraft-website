@@ -1,153 +1,123 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import Icon from "@/components/ui/icon";
-
 const Donate = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="text-center mb-12">
-        <h1 className="text-5xl font-bold text-white mb-4 font-montserrat">
-          Поддержать сервер
+    <div className="max-w-4xl mx-auto px-4 py-16">
+      <div className="text-center mb-16">
+        <h1 className="text-4xl font-bold text-white mb-6 tracking-wider">
+          ПОДДЕРЖКА СЕРВЕРА
         </h1>
-        <p className="text-xl text-gray-300">
-          Помогите развитию CaryCraft и получите эксклюзивные преимущества
-        </p>
+        <div className="w-32 h-1 bg-white mx-auto mb-6"></div>
+        <p className="text-gray-300 text-lg">Помогите развитию CaryCraft</p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
-        <Card className="bg-gradient-to-br from-green-900/50 to-emerald-900/50 border-green-500/30 backdrop-blur-sm">
-          <CardHeader>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
-                <Icon name="Key" size={24} className="text-white" />
-              </div>
-              <CardTitle className="text-2xl text-white">
-                Доступ к серверу
-              </CardTitle>
+      <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="bg-gray-900 border-2 border-gray-700 p-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 bg-green-600 border-2 border-green-400 flex items-center justify-center">
+              <span className="text-white text-lg">🗝️</span>
             </div>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-green-400 mb-2">50₽</div>
-              <Badge className="bg-green-600/20 text-green-400 border-green-500/30">
-                Разовая покупка
-              </Badge>
-            </div>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-gray-300">
-                <Icon name="Check" size={16} className="text-green-400" />
-                Полный доступ к серверу
-              </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <Icon name="Check" size={16} className="text-green-400" />
-                Участие во всех событиях
-              </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <Icon name="Check" size={16} className="text-green-400" />
-                Доступ к РП функциям
-              </div>
-            </div>
-            <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
-              <Icon name="ShoppingCart" size={16} className="mr-2" />
-              Купить проходку
-            </Button>
-          </CardContent>
-        </Card>
+            <h3 className="text-xl font-bold text-white tracking-wide">
+              ДОСТУП К СЕРВЕРУ
+            </h3>
+          </div>
 
-        <Card className="bg-gradient-to-br from-red-900/50 to-pink-900/50 border-red-500/30 backdrop-blur-sm">
-          <CardHeader>
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-pink-500 rounded-full flex items-center justify-center">
-                <Icon name="Heart" size={24} className="text-white" />
-              </div>
-              <CardTitle className="text-2xl text-white">
-                Дополнительные сердца
-              </CardTitle>
+          <div className="text-center mb-6">
+            <div className="text-4xl font-bold text-green-400 mb-2">50₽</div>
+            <div className="inline-block px-4 py-2 bg-green-900 border border-green-700 text-green-300">
+              РАЗОВАЯ ПОКУПКА
             </div>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-red-400 mb-2">10₽</div>
-              <Badge className="bg-red-600/20 text-red-400 border-red-500/30">
-                За 1 сердце
-              </Badge>
+          </div>
+
+          <div className="space-y-3 mb-8">
+            <div className="flex items-center gap-3 text-gray-300">
+              <span className="text-green-400">▪</span>
+              Полный доступ к серверу
             </div>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-gray-300">
-                <Icon name="Heart" size={16} className="text-red-400" />
-                Восстановление здоровья
-              </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <Icon name="Shield" size={16} className="text-red-400" />
-                Защита от смерти
-              </div>
-              <div className="flex items-center gap-3 text-gray-300">
-                <Icon name="TrendingUp" size={16} className="text-red-400" />
-                Максимум 10 сердец
-              </div>
+            <div className="flex items-center gap-3 text-gray-300">
+              <span className="text-green-400">▪</span>
+              Участие во всех событиях
             </div>
-            <div className="space-y-3">
-              <div className="flex gap-2">
-                <Button
-                  variant="outline"
-                  className="flex-1 border-red-500/30 text-red-400 hover:bg-red-500/10"
-                >
-                  1 ❤️
-                </Button>
-                <Button
-                  variant="outline"
-                  className="flex-1 border-red-500/30 text-red-400 hover:bg-red-500/10"
-                >
-                  5 ❤️
-                </Button>
-                <Button
-                  variant="outline"
-                  className="flex-1 border-red-500/30 text-red-400 hover:bg-red-500/10"
-                >
-                  10 ❤️
-                </Button>
-              </div>
-              <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                <Icon name="ShoppingCart" size={16} className="mr-2" />
-                Купить сердца
-              </Button>
+            <div className="flex items-center gap-3 text-gray-300">
+              <span className="text-green-400">▪</span>
+              Доступ к РП функциям
             </div>
-          </CardContent>
-        </Card>
+          </div>
+
+          <button className="w-full bg-green-600 hover:bg-green-700 text-white py-3 border-2 border-green-400 transition-colors">
+            КУПИТЬ ПРОХОДКУ
+          </button>
+        </div>
+
+        <div className="bg-gray-900 border-2 border-gray-700 p-8">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-12 h-12 bg-red-600 border-2 border-red-400 flex items-center justify-center">
+              <span className="text-white text-lg">❤️</span>
+            </div>
+            <h3 className="text-xl font-bold text-white tracking-wide">
+              СЕРДЦА
+            </h3>
+          </div>
+
+          <div className="text-center mb-6">
+            <div className="text-4xl font-bold text-red-400 mb-2">10₽</div>
+            <div className="inline-block px-4 py-2 bg-red-900 border border-red-700 text-red-300">
+              ЗА 1 СЕРДЦЕ
+            </div>
+          </div>
+
+          <div className="space-y-3 mb-8">
+            <div className="flex items-center gap-3 text-gray-300">
+              <span className="text-red-400">▪</span>
+              Восстановление здоровья
+            </div>
+            <div className="flex items-center gap-3 text-gray-300">
+              <span className="text-red-400">▪</span>
+              Защита от смерти
+            </div>
+            <div className="flex items-center gap-3 text-gray-300">
+              <span className="text-red-400">▪</span>
+              Максимум 10 сердец
+            </div>
+          </div>
+
+          <div className="space-y-3">
+            <div className="grid grid-cols-3 gap-2 mb-4">
+              <button className="py-2 border-2 border-red-600 text-red-400 hover:bg-red-900 transition-colors">
+                1 ❤️
+              </button>
+              <button className="py-2 border-2 border-red-600 text-red-400 hover:bg-red-900 transition-colors">
+                5 ❤️
+              </button>
+              <button className="py-2 border-2 border-red-600 text-red-400 hover:bg-red-900 transition-colors">
+                10 ❤️
+              </button>
+            </div>
+            <button className="w-full bg-red-600 hover:bg-red-700 text-white py-3 border-2 border-red-400 transition-colors">
+              КУПИТЬ СЕРДЦА
+            </button>
+          </div>
+        </div>
       </div>
 
-      <Card className="mt-8 bg-black/40 border-purple-500/30 backdrop-blur-sm">
-        <CardContent className="p-6 text-center">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Icon name="CreditCard" size={24} className="text-purple-400" />
-            <h3 className="text-xl font-bold text-white">Способы оплаты</h3>
+      <div className="bg-gray-800 border-2 border-gray-600 p-8 text-center">
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <div className="w-8 h-8 bg-yellow-600 border-2 border-yellow-400"></div>
+          <h3 className="text-2xl font-bold text-white tracking-wider">
+            СПОСОБЫ ОПЛАТЫ
+          </h3>
+        </div>
+        <p className="text-gray-400 mb-6">Карты, СБП, QIWI, ЮMoney</p>
+        <div className="flex justify-center gap-4">
+          <div className="px-4 py-2 border border-gray-600 text-gray-400">
+            VISA
           </div>
-          <p className="text-gray-300 mb-4">
-            Принимаем карты, СБП, QIWI, ЮMoney и другие способы оплаты
-          </p>
-          <div className="flex justify-center gap-4">
-            <Badge
-              variant="outline"
-              className="border-purple-500/30 text-purple-400"
-            >
-              Visa
-            </Badge>
-            <Badge
-              variant="outline"
-              className="border-purple-500/30 text-purple-400"
-            >
-              MasterCard
-            </Badge>
-            <Badge
-              variant="outline"
-              className="border-purple-500/30 text-purple-400"
-            >
-              СБП
-            </Badge>
+          <div className="px-4 py-2 border border-gray-600 text-gray-400">
+            MASTERCARD
           </div>
-        </CardContent>
-      </Card>
+          <div className="px-4 py-2 border border-gray-600 text-gray-400">
+            СБП
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
